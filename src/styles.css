@@ -170,3 +170,105 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@utility text-gradient-gold {
+  background: var(--gradient-gold);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-devotional {
+  background: var(--gradient-devotional);
+}
+
+@utility shadow-warm {
+  box-shadow: var(--shadow-warm);
+}
+
+@utility glow-gold {
+  box-shadow: var(--shadow-gold);
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-warm);
+}
+
+@keyframes slow-zoom {
+  from { transform: scale(1.04); }
+  to { transform: scale(1.16); }
+}
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes float-up {
+  0% { opacity: 0; transform: translateY(0) scale(0.7); }
+  20% { opacity: 0.9; }
+  100% { opacity: 0; transform: translateY(-220px) scale(1.1); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--gold) 45%, transparent); }
+  50% { box-shadow: 0 0 0 22px color-mix(in oklab, var(--gold) 0%, transparent); }
+}
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.25); }
+  50% { transform: scaleY(1); }
+}
+@keyframes scroll-hint {
+  0% { opacity: 0; transform: translateY(-6px); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+@keyframes draw-line {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@utility animate-slow-zoom {
+  animation: slow-zoom 26s ease-in-out infinite alternate;
+}
+@utility animate-rise {
+  animation: rise-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@utility animate-float-up {
+  animation: float-up linear infinite;
+}
+@utility animate-pulse-glow {
+  animation: pulse-glow 2.6s ease-out infinite;
+}
+@utility animate-wave {
+  animation: wave 1.1s ease-in-out infinite;
+}
+@utility animate-scroll-hint {
+  animation: scroll-hint 2.2s ease-in-out infinite;
+}
+@utility animate-draw-line {
+  animation: draw-line 1.6s ease-out both;
+  transform-origin: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
