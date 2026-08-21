@@ -21,8 +21,8 @@ export function HeroSection() {
         height={1088}
         className="absolute inset-0 size-full object-cover animate-slow-zoom"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/85 via-maroon/55 to-ink/90" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--color-ink)_65%,transparent),transparent_70%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-maroon/40 to-ink/85" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,color-mix(in_oklab,var(--color-ink)_55%,transparent),transparent_70%)]" />
 
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         {particles.map((p, i) => (
