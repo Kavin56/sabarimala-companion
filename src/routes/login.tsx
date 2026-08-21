@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Flame } from "lucide-react";
 export const Route = createFileRoute("/login")({
   component: LoginPageUI,
 });
@@ -17,18 +17,18 @@ function LoginPageUI() {
     <div className="min-h-screen bg-white font-sans overflow-hidden flex flex-col lg:flex-row">
       {/* LEFT SECTION (Form) */}
       <div className="w-full lg:w-[40%] flex flex-col p-6 lg:px-12 lg:py-10 relative z-10 max-h-screen overflow-y-auto">
-        {/* Logo Placeholder */}
-        <div className="flex items-start gap-3 mb-8 lg:mb-12 scale-90 origin-left shrink-0">
-          <div className="w-10 h-10 bg-gray-200 rounded-lg shadow-sm" /> {/* Replace with your logo */}
-          <div>
-            <h1 className="text-sm font-bold text-[#1a1f36] leading-none uppercase">
-              Your Company Name
-            </h1>
-            <span className="text-[#6b21a8] text-[10px] block tracking-widest font-black opacity-80 uppercase mt-1">
-              Tagline
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-3 mb-8 lg:mb-12 group w-fit">
+          <span className="grid size-10 shrink-0 place-items-center rounded-full border border-gold/50 bg-maroon/60 text-gold transition-transform duration-300 group-hover:scale-105">
+            <Flame className="size-5" aria-hidden="true" />
+          </span>
+          <span className="font-display text-base leading-tight text-ink sm:text-lg">
+            Sri Sri Shabharish Guruji
+            <span className="block text-xs tracking-[0.28em] uppercase text-maroon">
+              Ayyappa Yathra
             </span>
-          </div>
-        </div>
+          </span>
+        </a>
         {/* Dynamic Form Area */}
         <div className="flex-grow flex items-start mb-8 lg:mb-10">
           <motion.div 
@@ -112,16 +112,16 @@ function LoginPageUI() {
       </div>
       {/* RIGHT SECTION (Visual Panel) */}
       <div className="hidden lg:flex w-[60%] bg-gray-50 p-6 items-center justify-center">
-        <div className="w-full h-full bg-[#fcd34d] rounded-[48px] relative overflow-hidden flex flex-col p-12 lg:p-16 shadow-2xl">
+        <div className="w-full h-full bg-gradient-to-b from-ink via-maroon to-ink rounded-[48px] relative overflow-hidden flex flex-col p-12 lg:p-16 shadow-2xl">
           {/* Badge */}
           <div className="mb-6">
-            <span className="bg-transparent text-[11px] font-bold px-3 py-1 rounded-full border border-black/10 uppercase tracking-widest text-black/40">
-              NEW
+            <span className="bg-transparent text-[11px] font-bold px-3 py-1 rounded-full border border-white/20 uppercase tracking-widest text-gold">
+              PILGRIMAGE COMPANION
             </span>
           </div>
           {/* Headline */}
-          <h2 className="text-5xl xl:text-6xl font-bold text-[#1a1f36] leading-[1.05] tracking-tight mb-12 max-w-xl">
-            Manage your workflow <br /> seamlessly <br /> from one place
+          <h2 className="font-display text-5xl xl:text-6xl font-bold text-ivory leading-[1.05] tracking-tight mb-12 max-w-xl">
+            Your sacred journey, <br /> guided at <br /> every step
           </h2>
           {/* Illustration Mockup */}
           <div className="relative mt-8 px-12">
@@ -149,11 +149,11 @@ function LoginPageUI() {
             {/* Hand-drawn arrow annotation */}
             <div className="absolute top-0 right-[15%] translate-y-[-110%] hidden xl:block">
               <div className="flex flex-col items-center">
-                <span className="text-sm font-serif italic text-[#1a1f36] whitespace-nowrap mb-1">
-                  see it all at a glance
+                <span className="text-sm font-serif italic text-ivory/80 whitespace-nowrap mb-1">
+                  track your vratham
                 </span>
                 <div className="relative w-16 h-8 translate-x-2">
-                  <svg className="w-full h-full text-[#1a1f36] opacity-40 -scale-x-100 rotate-[5deg]" viewBox="0 0 100 50">
+                  <svg className="w-full h-full text-ivory opacity-40 -scale-x-100 rotate-[5deg]" viewBox="0 0 100 50">
                     <path d="M10,40 C40,45 60,30 85,5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
                     <path d="M75,5 L85,5 L85,15" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>

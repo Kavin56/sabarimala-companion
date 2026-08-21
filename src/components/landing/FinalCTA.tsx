@@ -24,7 +24,7 @@ export function FinalCTA() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="/begin-yathra"
+            href="/login"
             className="w-full rounded-full bg-devotional px-8 py-4 text-sm font-semibold text-ivory shadow-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-saffron hover:shadow-gold sm:w-auto"
           >
             Begin Your Yathra

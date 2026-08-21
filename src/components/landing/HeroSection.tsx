@@ -68,7 +68,7 @@ export function HeroSection() {
           style={{ animationDelay: "0.4s" }}
         >
           <a
-            href="/begin-yathra"
+            href="/login"
             className="w-full rounded-full bg-devotional px-8 py-4 text-sm font-semibold tracking-wide text-ivory shadow-warm transition-all duration-300 hover:-translate-y-0.5 hover:bg-saffron hover:shadow-gold sm:w-auto"
           >
             Begin Your Yathra

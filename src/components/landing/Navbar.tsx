@@ -61,7 +61,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="/begin-yathra"
+            href="/login"
             className="rounded-full bg-devotional px-4 py-2.5 text-xs font-semibold tracking-wide text-ivory shadow-warm transition-all duration-300 hover:bg-saffron hover:shadow-gold sm:px-6 sm:text-sm"
           >
             Begin Your Yathra
