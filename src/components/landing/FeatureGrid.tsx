@@ -88,7 +88,7 @@ const features: Feature[] = [
     title: "Emergency",
     text: "Emergency contacts, hospitals, police, fire and SOS/help.",
     icon: LifeBuoy,
-    span: "lg:col-span-2",
+    span: "lg:col-span-4",
     href: "#safety",
   },
 ];
