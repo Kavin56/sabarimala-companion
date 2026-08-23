@@ -83,6 +83,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Lovable App" },
       { property: "og:description", content: "Lovable Generated Project" },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
     ],
@@ -97,7 +98,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+<<<<<<< Updated upstream
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+=======
+<<<<<<< HEAD
+=======
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+>>>>>>> d11f18b7739c7b072237597f1f621ccec6ecf906
+>>>>>>> Stashed changes
     ],
   }),
 
