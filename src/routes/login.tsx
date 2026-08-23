@@ -1,7 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Flame } from "lucide-react";
+
 export const Route = createFileRoute("/login")({
   component: LoginPageUI,
 });
@@ -9,9 +10,11 @@ export const Route = createFileRoute("/login")({
 function LoginPageUI() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login submitted:", { email, password });
+    navigate({ to: "/voice-onboarding" });
   };
   return (
     <div className="min-h-screen bg-white font-sans overflow-hidden flex flex-col lg:flex-row">
@@ -91,12 +94,15 @@ function LoginPageUI() {
                 Google
               </button>
               <div className="flex justify-between items-center text-sm pt-2">
-                <button type="button" className="text-gray-500 hover:text-[#2563eb] transition-colors">
+                <Link to="/register" className="text-gray-500 hover:text-[#2563eb] transition-colors font-medium">
                   Create an account
-                </button>
-                <button type="button" className="text-gray-500 hover:text-[#2563eb] transition-colors">
-                  Forgot your password?
-                </button>
+                </Link>
+                <Link to="/otp" className="text-gray-500 hover:text-[#2563eb] transition-colors font-medium">
+                  Login via OTP
+                </Link>
+                <Link to="/forgot-password" className="text-gray-500 hover:text-[#2563eb] transition-colors font-medium">
+                  Forgot password?
+                </Link>
               </div>
             </form>
           </motion.div>

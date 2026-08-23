@@ -10,11 +10,110 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AccommodationRouteImport } from './routes/accommodation'
+import { Route as BookingsRouteImport } from './routes/bookings'
+import { Route as CommunityRouteImport } from './routes/community'
+import { Route as EmergencyRouteImport } from './routes/emergency'
+import { Route as FamilySafetyRouteImport } from './routes/family-safety'
+import { Route as FavoritesRouteImport } from './routes/favorites'
+import { Route as FoodRouteImport } from './routes/food'
+import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
+import { Route as HomeRouteImport } from './routes/home'
+import { Route as JourneyPlanRouteImport } from './routes/journey-plan'
+import { Route as LiveJourneyRouteImport } from './routes/live-journey'
 import { Route as LoginRouteImport } from './routes/login'
+import { Route as MyJourneyRouteImport } from './routes/my-journey'
+import { Route as NearbyTemplesRouteImport } from './routes/nearby-temples'
+import { Route as NotificationsRouteImport } from './routes/notifications'
+import { Route as OfflineRouteImport } from './routes/offline'
+import { Route as OtpRouteImport } from './routes/otp'
+import { Route as PackagesRouteImport } from './routes/packages'
+import { Route as PackingRouteImport } from './routes/packing'
+import { Route as PambaRouteImport } from './routes/pamba'
+import { Route as PilgrimageRouteRouteImport } from './routes/pilgrimage-route'
+import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as ProfileSetupRouteImport } from './routes/profile-setup'
+import { Route as RegisterRouteImport } from './routes/register'
+import { Route as RouteMapRouteImport } from './routes/route-map'
+import { Route as SannidhanamRouteImport } from './routes/sannidhanam'
+import { Route as TemplesRouteImport } from './routes/temples'
+import { Route as TravelRouteImport } from './routes/travel'
+import { Route as VideosRouteImport } from './routes/videos'
+import { Route as VoiceOnboardingRouteImport } from './routes/voice-onboarding'
+import { Route as VrathamRouteImport } from './routes/vratham'
+import { Route as WeatherRouteImport } from './routes/weather'
+import { Route as AccommodationIdRouteImport } from './routes/accommodation.$id'
+import { Route as BookingPassengersRouteImport } from './routes/booking/passengers'
+import { Route as BookingPaymentRouteImport } from './routes/booking/payment'
+import { Route as BookingReviewRouteImport } from './routes/booking/review'
+import { Route as BookingSuccessRouteImport } from './routes/booking/success'
+import { Route as CheckpointIdRouteImport } from './routes/checkpoint.$id'
+import { Route as PackagesIdRouteImport } from './routes/packages.$id'
+import { Route as TemplesIdRouteImport } from './routes/temples.$id'
+import { Route as TravelBusRouteImport } from './routes/travel.bus'
+import { Route as TravelCarRouteImport } from './routes/travel.car'
+import { Route as TravelTrainRouteImport } from './routes/travel.train'
+import { Route as VideosIdRouteImport } from './routes/videos.$id'
+import { Route as TravelBusSeatsRouteImport } from './routes/travel.bus.seats'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccommodationRoute = AccommodationRouteImport.update({
+  id: '/accommodation',
+  path: '/accommodation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookingsRoute = BookingsRouteImport.update({
+  id: '/bookings',
+  path: '/bookings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityRoute = CommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyRoute = EmergencyRouteImport.update({
+  id: '/emergency',
+  path: '/emergency',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FamilySafetyRoute = FamilySafetyRouteImport.update({
+  id: '/family-safety',
+  path: '/family-safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FavoritesRoute = FavoritesRouteImport.update({
+  id: '/favorites',
+  path: '/favorites',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FoodRoute = FoodRouteImport.update({
+  id: '/food',
+  path: '/food',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
+  id: '/forgot-password',
+  path: '/forgot-password',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HomeRoute = HomeRouteImport.update({
+  id: '/home',
+  path: '/home',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneyPlanRoute = JourneyPlanRouteImport.update({
+  id: '/journey-plan',
+  path: '/journey-plan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LiveJourneyRoute = LiveJourneyRouteImport.update({
+  id: '/live-journey',
+  path: '/live-journey',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginRoute = LoginRouteImport.update({
@@ -22,31 +121,503 @@ const LoginRoute = LoginRouteImport.update({
   path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MyJourneyRoute = MyJourneyRouteImport.update({
+  id: '/my-journey',
+  path: '/my-journey',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NearbyTemplesRoute = NearbyTemplesRouteImport.update({
+  id: '/nearby-temples',
+  path: '/nearby-temples',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NotificationsRoute = NotificationsRouteImport.update({
+  id: '/notifications',
+  path: '/notifications',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OfflineRoute = OfflineRouteImport.update({
+  id: '/offline',
+  path: '/offline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OtpRoute = OtpRouteImport.update({
+  id: '/otp',
+  path: '/otp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PackagesRoute = PackagesRouteImport.update({
+  id: '/packages',
+  path: '/packages',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PackingRoute = PackingRouteImport.update({
+  id: '/packing',
+  path: '/packing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PambaRoute = PambaRouteImport.update({
+  id: '/pamba',
+  path: '/pamba',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PilgrimageRouteRoute = PilgrimageRouteRouteImport.update({
+  id: '/pilgrimage-route',
+  path: '/pilgrimage-route',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileSetupRoute = ProfileSetupRouteImport.update({
+  id: '/profile-setup',
+  path: '/profile-setup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegisterRoute = RegisterRouteImport.update({
+  id: '/register',
+  path: '/register',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RouteMapRoute = RouteMapRouteImport.update({
+  id: '/route-map',
+  path: '/route-map',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SannidhanamRoute = SannidhanamRouteImport.update({
+  id: '/sannidhanam',
+  path: '/sannidhanam',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TemplesRoute = TemplesRouteImport.update({
+  id: '/temples',
+  path: '/temples',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TravelRoute = TravelRouteImport.update({
+  id: '/travel',
+  path: '/travel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideosRoute = VideosRouteImport.update({
+  id: '/videos',
+  path: '/videos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VoiceOnboardingRoute = VoiceOnboardingRouteImport.update({
+  id: '/voice-onboarding',
+  path: '/voice-onboarding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VrathamRoute = VrathamRouteImport.update({
+  id: '/vratham',
+  path: '/vratham',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeatherRoute = WeatherRouteImport.update({
+  id: '/weather',
+  path: '/weather',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccommodationIdRoute = AccommodationIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => AccommodationRoute,
+} as any)
+const BookingPassengersRoute = BookingPassengersRouteImport.update({
+  id: '/booking/passengers',
+  path: '/booking/passengers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookingPaymentRoute = BookingPaymentRouteImport.update({
+  id: '/booking/payment',
+  path: '/booking/payment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookingReviewRoute = BookingReviewRouteImport.update({
+  id: '/booking/review',
+  path: '/booking/review',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookingSuccessRoute = BookingSuccessRouteImport.update({
+  id: '/booking/success',
+  path: '/booking/success',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckpointIdRoute = CheckpointIdRouteImport.update({
+  id: '/checkpoint/$id',
+  path: '/checkpoint/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PackagesIdRoute = PackagesIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => PackagesRoute,
+} as any)
+const TemplesIdRoute = TemplesIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => TemplesRoute,
+} as any)
+const TravelBusRoute = TravelBusRouteImport.update({
+  id: '/bus',
+  path: '/bus',
+  getParentRoute: () => TravelRoute,
+} as any)
+const TravelCarRoute = TravelCarRouteImport.update({
+  id: '/car',
+  path: '/car',
+  getParentRoute: () => TravelRoute,
+} as any)
+const TravelTrainRoute = TravelTrainRouteImport.update({
+  id: '/train',
+  path: '/train',
+  getParentRoute: () => TravelRoute,
+} as any)
+const VideosIdRoute = VideosIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => VideosRoute,
+} as any)
+const TravelBusSeatsRoute = TravelBusSeatsRouteImport.update({
+  id: '/seats',
+  path: '/seats',
+  getParentRoute: () => TravelBusRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/accommodation': typeof AccommodationRouteWithChildren
+  '/bookings': typeof BookingsRoute
+  '/community': typeof CommunityRoute
+  '/emergency': typeof EmergencyRoute
+  '/family-safety': typeof FamilySafetyRoute
+  '/favorites': typeof FavoritesRoute
+  '/food': typeof FoodRoute
+  '/forgot-password': typeof ForgotPasswordRoute
+  '/home': typeof HomeRoute
+  '/journey-plan': typeof JourneyPlanRoute
+  '/live-journey': typeof LiveJourneyRoute
   '/login': typeof LoginRoute
+  '/my-journey': typeof MyJourneyRoute
+  '/nearby-temples': typeof NearbyTemplesRoute
+  '/notifications': typeof NotificationsRoute
+  '/offline': typeof OfflineRoute
+  '/otp': typeof OtpRoute
+  '/packages': typeof PackagesRouteWithChildren
+  '/packing': typeof PackingRoute
+  '/pamba': typeof PambaRoute
+  '/pilgrimage-route': typeof PilgrimageRouteRoute
+  '/profile': typeof ProfileRoute
+  '/profile-setup': typeof ProfileSetupRoute
+  '/register': typeof RegisterRoute
+  '/route-map': typeof RouteMapRoute
+  '/sannidhanam': typeof SannidhanamRoute
+  '/temples': typeof TemplesRouteWithChildren
+  '/travel': typeof TravelRouteWithChildren
+  '/videos': typeof VideosRouteWithChildren
+  '/voice-onboarding': typeof VoiceOnboardingRoute
+  '/vratham': typeof VrathamRoute
+  '/weather': typeof WeatherRoute
+  '/accommodation/$id': typeof AccommodationIdRoute
+  '/booking/passengers': typeof BookingPassengersRoute
+  '/booking/payment': typeof BookingPaymentRoute
+  '/booking/review': typeof BookingReviewRoute
+  '/booking/success': typeof BookingSuccessRoute
+  '/checkpoint/$id': typeof CheckpointIdRoute
+  '/packages/$id': typeof PackagesIdRoute
+  '/temples/$id': typeof TemplesIdRoute
+  '/travel/bus': typeof TravelBusRouteWithChildren
+  '/travel/car': typeof TravelCarRoute
+  '/travel/train': typeof TravelTrainRoute
+  '/videos/$id': typeof VideosIdRoute
+  '/travel/bus/seats': typeof TravelBusSeatsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/accommodation': typeof AccommodationRouteWithChildren
+  '/bookings': typeof BookingsRoute
+  '/community': typeof CommunityRoute
+  '/emergency': typeof EmergencyRoute
+  '/family-safety': typeof FamilySafetyRoute
+  '/favorites': typeof FavoritesRoute
+  '/food': typeof FoodRoute
+  '/forgot-password': typeof ForgotPasswordRoute
+  '/home': typeof HomeRoute
+  '/journey-plan': typeof JourneyPlanRoute
+  '/live-journey': typeof LiveJourneyRoute
   '/login': typeof LoginRoute
+  '/my-journey': typeof MyJourneyRoute
+  '/nearby-temples': typeof NearbyTemplesRoute
+  '/notifications': typeof NotificationsRoute
+  '/offline': typeof OfflineRoute
+  '/otp': typeof OtpRoute
+  '/packages': typeof PackagesRouteWithChildren
+  '/packing': typeof PackingRoute
+  '/pamba': typeof PambaRoute
+  '/pilgrimage-route': typeof PilgrimageRouteRoute
+  '/profile': typeof ProfileRoute
+  '/profile-setup': typeof ProfileSetupRoute
+  '/register': typeof RegisterRoute
+  '/route-map': typeof RouteMapRoute
+  '/sannidhanam': typeof SannidhanamRoute
+  '/temples': typeof TemplesRouteWithChildren
+  '/travel': typeof TravelRouteWithChildren
+  '/videos': typeof VideosRouteWithChildren
+  '/voice-onboarding': typeof VoiceOnboardingRoute
+  '/vratham': typeof VrathamRoute
+  '/weather': typeof WeatherRoute
+  '/accommodation/$id': typeof AccommodationIdRoute
+  '/booking/passengers': typeof BookingPassengersRoute
+  '/booking/payment': typeof BookingPaymentRoute
+  '/booking/review': typeof BookingReviewRoute
+  '/booking/success': typeof BookingSuccessRoute
+  '/checkpoint/$id': typeof CheckpointIdRoute
+  '/packages/$id': typeof PackagesIdRoute
+  '/temples/$id': typeof TemplesIdRoute
+  '/travel/bus': typeof TravelBusRouteWithChildren
+  '/travel/car': typeof TravelCarRoute
+  '/travel/train': typeof TravelTrainRoute
+  '/videos/$id': typeof VideosIdRoute
+  '/travel/bus/seats': typeof TravelBusSeatsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/accommodation': typeof AccommodationRouteWithChildren
+  '/bookings': typeof BookingsRoute
+  '/community': typeof CommunityRoute
+  '/emergency': typeof EmergencyRoute
+  '/family-safety': typeof FamilySafetyRoute
+  '/favorites': typeof FavoritesRoute
+  '/food': typeof FoodRoute
+  '/forgot-password': typeof ForgotPasswordRoute
+  '/home': typeof HomeRoute
+  '/journey-plan': typeof JourneyPlanRoute
+  '/live-journey': typeof LiveJourneyRoute
   '/login': typeof LoginRoute
+  '/my-journey': typeof MyJourneyRoute
+  '/nearby-temples': typeof NearbyTemplesRoute
+  '/notifications': typeof NotificationsRoute
+  '/offline': typeof OfflineRoute
+  '/otp': typeof OtpRoute
+  '/packages': typeof PackagesRouteWithChildren
+  '/packing': typeof PackingRoute
+  '/pamba': typeof PambaRoute
+  '/pilgrimage-route': typeof PilgrimageRouteRoute
+  '/profile': typeof ProfileRoute
+  '/profile-setup': typeof ProfileSetupRoute
+  '/register': typeof RegisterRoute
+  '/route-map': typeof RouteMapRoute
+  '/sannidhanam': typeof SannidhanamRoute
+  '/temples': typeof TemplesRouteWithChildren
+  '/travel': typeof TravelRouteWithChildren
+  '/videos': typeof VideosRouteWithChildren
+  '/voice-onboarding': typeof VoiceOnboardingRoute
+  '/vratham': typeof VrathamRoute
+  '/weather': typeof WeatherRoute
+  '/accommodation/$id': typeof AccommodationIdRoute
+  '/booking/passengers': typeof BookingPassengersRoute
+  '/booking/payment': typeof BookingPaymentRoute
+  '/booking/review': typeof BookingReviewRoute
+  '/booking/success': typeof BookingSuccessRoute
+  '/checkpoint/$id': typeof CheckpointIdRoute
+  '/packages/$id': typeof PackagesIdRoute
+  '/temples/$id': typeof TemplesIdRoute
+  '/travel/bus': typeof TravelBusRouteWithChildren
+  '/travel/car': typeof TravelCarRoute
+  '/travel/train': typeof TravelTrainRoute
+  '/videos/$id': typeof VideosIdRoute
+  '/travel/bus/seats': typeof TravelBusSeatsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/login'
+  fullPaths:
+    | '/'
+    | '/accommodation'
+    | '/bookings'
+    | '/community'
+    | '/emergency'
+    | '/family-safety'
+    | '/favorites'
+    | '/food'
+    | '/forgot-password'
+    | '/home'
+    | '/journey-plan'
+    | '/live-journey'
+    | '/login'
+    | '/my-journey'
+    | '/nearby-temples'
+    | '/notifications'
+    | '/offline'
+    | '/otp'
+    | '/packages'
+    | '/packing'
+    | '/pamba'
+    | '/pilgrimage-route'
+    | '/profile'
+    | '/profile-setup'
+    | '/register'
+    | '/route-map'
+    | '/sannidhanam'
+    | '/temples'
+    | '/travel'
+    | '/videos'
+    | '/voice-onboarding'
+    | '/vratham'
+    | '/weather'
+    | '/accommodation/$id'
+    | '/booking/passengers'
+    | '/booking/payment'
+    | '/booking/review'
+    | '/booking/success'
+    | '/checkpoint/$id'
+    | '/packages/$id'
+    | '/temples/$id'
+    | '/travel/bus'
+    | '/travel/car'
+    | '/travel/train'
+    | '/videos/$id'
+    | '/travel/bus/seats'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/login'
-  id: '__root__' | '/' | '/login'
+  to:
+    | '/'
+    | '/accommodation'
+    | '/bookings'
+    | '/community'
+    | '/emergency'
+    | '/family-safety'
+    | '/favorites'
+    | '/food'
+    | '/forgot-password'
+    | '/home'
+    | '/journey-plan'
+    | '/live-journey'
+    | '/login'
+    | '/my-journey'
+    | '/nearby-temples'
+    | '/notifications'
+    | '/offline'
+    | '/otp'
+    | '/packages'
+    | '/packing'
+    | '/pamba'
+    | '/pilgrimage-route'
+    | '/profile'
+    | '/profile-setup'
+    | '/register'
+    | '/route-map'
+    | '/sannidhanam'
+    | '/temples'
+    | '/travel'
+    | '/videos'
+    | '/voice-onboarding'
+    | '/vratham'
+    | '/weather'
+    | '/accommodation/$id'
+    | '/booking/passengers'
+    | '/booking/payment'
+    | '/booking/review'
+    | '/booking/success'
+    | '/checkpoint/$id'
+    | '/packages/$id'
+    | '/temples/$id'
+    | '/travel/bus'
+    | '/travel/car'
+    | '/travel/train'
+    | '/videos/$id'
+    | '/travel/bus/seats'
+  id:
+    | '__root__'
+    | '/'
+    | '/accommodation'
+    | '/bookings'
+    | '/community'
+    | '/emergency'
+    | '/family-safety'
+    | '/favorites'
+    | '/food'
+    | '/forgot-password'
+    | '/home'
+    | '/journey-plan'
+    | '/live-journey'
+    | '/login'
+    | '/my-journey'
+    | '/nearby-temples'
+    | '/notifications'
+    | '/offline'
+    | '/otp'
+    | '/packages'
+    | '/packing'
+    | '/pamba'
+    | '/pilgrimage-route'
+    | '/profile'
+    | '/profile-setup'
+    | '/register'
+    | '/route-map'
+    | '/sannidhanam'
+    | '/temples'
+    | '/travel'
+    | '/videos'
+    | '/voice-onboarding'
+    | '/vratham'
+    | '/weather'
+    | '/accommodation/$id'
+    | '/booking/passengers'
+    | '/booking/payment'
+    | '/booking/review'
+    | '/booking/success'
+    | '/checkpoint/$id'
+    | '/packages/$id'
+    | '/temples/$id'
+    | '/travel/bus'
+    | '/travel/car'
+    | '/travel/train'
+    | '/videos/$id'
+    | '/travel/bus/seats'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AccommodationRoute: typeof AccommodationRouteWithChildren
+  BookingsRoute: typeof BookingsRoute
+  CommunityRoute: typeof CommunityRoute
+  EmergencyRoute: typeof EmergencyRoute
+  FamilySafetyRoute: typeof FamilySafetyRoute
+  FavoritesRoute: typeof FavoritesRoute
+  FoodRoute: typeof FoodRoute
+  ForgotPasswordRoute: typeof ForgotPasswordRoute
+  HomeRoute: typeof HomeRoute
+  JourneyPlanRoute: typeof JourneyPlanRoute
+  LiveJourneyRoute: typeof LiveJourneyRoute
   LoginRoute: typeof LoginRoute
+  MyJourneyRoute: typeof MyJourneyRoute
+  NearbyTemplesRoute: typeof NearbyTemplesRoute
+  NotificationsRoute: typeof NotificationsRoute
+  OfflineRoute: typeof OfflineRoute
+  OtpRoute: typeof OtpRoute
+  PackagesRoute: typeof PackagesRouteWithChildren
+  PackingRoute: typeof PackingRoute
+  PambaRoute: typeof PambaRoute
+  PilgrimageRouteRoute: typeof PilgrimageRouteRoute
+  ProfileRoute: typeof ProfileRoute
+  ProfileSetupRoute: typeof ProfileSetupRoute
+  RegisterRoute: typeof RegisterRoute
+  RouteMapRoute: typeof RouteMapRoute
+  SannidhanamRoute: typeof SannidhanamRoute
+  TemplesRoute: typeof TemplesRouteWithChildren
+  TravelRoute: typeof TravelRouteWithChildren
+  VideosRoute: typeof VideosRouteWithChildren
+  VoiceOnboardingRoute: typeof VoiceOnboardingRoute
+  VrathamRoute: typeof VrathamRoute
+  WeatherRoute: typeof WeatherRoute
+  BookingPassengersRoute: typeof BookingPassengersRoute
+  BookingPaymentRoute: typeof BookingPaymentRoute
+  BookingReviewRoute: typeof BookingReviewRoute
+  BookingSuccessRoute: typeof BookingSuccessRoute
+  CheckpointIdRoute: typeof CheckpointIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +629,83 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/accommodation': {
+      id: '/accommodation'
+      path: '/accommodation'
+      fullPath: '/accommodation'
+      preLoaderRoute: typeof AccommodationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bookings': {
+      id: '/bookings'
+      path: '/bookings'
+      fullPath: '/bookings'
+      preLoaderRoute: typeof BookingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community': {
+      id: '/community'
+      path: '/community'
+      fullPath: '/community'
+      preLoaderRoute: typeof CommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency': {
+      id: '/emergency'
+      path: '/emergency'
+      fullPath: '/emergency'
+      preLoaderRoute: typeof EmergencyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/family-safety': {
+      id: '/family-safety'
+      path: '/family-safety'
+      fullPath: '/family-safety'
+      preLoaderRoute: typeof FamilySafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/favorites': {
+      id: '/favorites'
+      path: '/favorites'
+      fullPath: '/favorites'
+      preLoaderRoute: typeof FavoritesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/food': {
+      id: '/food'
+      path: '/food'
+      fullPath: '/food'
+      preLoaderRoute: typeof FoodRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forgot-password': {
+      id: '/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof ForgotPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/home': {
+      id: '/home'
+      path: '/home'
+      fullPath: '/home'
+      preLoaderRoute: typeof HomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey-plan': {
+      id: '/journey-plan'
+      path: '/journey-plan'
+      fullPath: '/journey-plan'
+      preLoaderRoute: typeof JourneyPlanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/live-journey': {
+      id: '/live-journey'
+      path: '/live-journey'
+      fullPath: '/live-journey'
+      preLoaderRoute: typeof LiveJourneyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/login': {
       id: '/login'
       path: '/login'
@@ -65,12 +713,352 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/my-journey': {
+      id: '/my-journey'
+      path: '/my-journey'
+      fullPath: '/my-journey'
+      preLoaderRoute: typeof MyJourneyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nearby-temples': {
+      id: '/nearby-temples'
+      path: '/nearby-temples'
+      fullPath: '/nearby-temples'
+      preLoaderRoute: typeof NearbyTemplesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notifications': {
+      id: '/notifications'
+      path: '/notifications'
+      fullPath: '/notifications'
+      preLoaderRoute: typeof NotificationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offline': {
+      id: '/offline'
+      path: '/offline'
+      fullPath: '/offline'
+      preLoaderRoute: typeof OfflineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/otp': {
+      id: '/otp'
+      path: '/otp'
+      fullPath: '/otp'
+      preLoaderRoute: typeof OtpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packages': {
+      id: '/packages'
+      path: '/packages'
+      fullPath: '/packages'
+      preLoaderRoute: typeof PackagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packing': {
+      id: '/packing'
+      path: '/packing'
+      fullPath: '/packing'
+      preLoaderRoute: typeof PackingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pamba': {
+      id: '/pamba'
+      path: '/pamba'
+      fullPath: '/pamba'
+      preLoaderRoute: typeof PambaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pilgrimage-route': {
+      id: '/pilgrimage-route'
+      path: '/pilgrimage-route'
+      fullPath: '/pilgrimage-route'
+      preLoaderRoute: typeof PilgrimageRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profile-setup': {
+      id: '/profile-setup'
+      path: '/profile-setup'
+      fullPath: '/profile-setup'
+      preLoaderRoute: typeof ProfileSetupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/register': {
+      id: '/register'
+      path: '/register'
+      fullPath: '/register'
+      preLoaderRoute: typeof RegisterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/route-map': {
+      id: '/route-map'
+      path: '/route-map'
+      fullPath: '/route-map'
+      preLoaderRoute: typeof RouteMapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sannidhanam': {
+      id: '/sannidhanam'
+      path: '/sannidhanam'
+      fullPath: '/sannidhanam'
+      preLoaderRoute: typeof SannidhanamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/temples': {
+      id: '/temples'
+      path: '/temples'
+      fullPath: '/temples'
+      preLoaderRoute: typeof TemplesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/travel': {
+      id: '/travel'
+      path: '/travel'
+      fullPath: '/travel'
+      preLoaderRoute: typeof TravelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/videos': {
+      id: '/videos'
+      path: '/videos'
+      fullPath: '/videos'
+      preLoaderRoute: typeof VideosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/voice-onboarding': {
+      id: '/voice-onboarding'
+      path: '/voice-onboarding'
+      fullPath: '/voice-onboarding'
+      preLoaderRoute: typeof VoiceOnboardingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vratham': {
+      id: '/vratham'
+      path: '/vratham'
+      fullPath: '/vratham'
+      preLoaderRoute: typeof VrathamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/weather': {
+      id: '/weather'
+      path: '/weather'
+      fullPath: '/weather'
+      preLoaderRoute: typeof WeatherRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/accommodation/$id': {
+      id: '/accommodation/$id'
+      path: '/$id'
+      fullPath: '/accommodation/$id'
+      preLoaderRoute: typeof AccommodationIdRouteImport
+      parentRoute: typeof AccommodationRoute
+    }
+    '/booking/passengers': {
+      id: '/booking/passengers'
+      path: '/booking/passengers'
+      fullPath: '/booking/passengers'
+      preLoaderRoute: typeof BookingPassengersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/booking/payment': {
+      id: '/booking/payment'
+      path: '/booking/payment'
+      fullPath: '/booking/payment'
+      preLoaderRoute: typeof BookingPaymentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/booking/review': {
+      id: '/booking/review'
+      path: '/booking/review'
+      fullPath: '/booking/review'
+      preLoaderRoute: typeof BookingReviewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/booking/success': {
+      id: '/booking/success'
+      path: '/booking/success'
+      fullPath: '/booking/success'
+      preLoaderRoute: typeof BookingSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkpoint/$id': {
+      id: '/checkpoint/$id'
+      path: '/checkpoint/$id'
+      fullPath: '/checkpoint/$id'
+      preLoaderRoute: typeof CheckpointIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packages/$id': {
+      id: '/packages/$id'
+      path: '/$id'
+      fullPath: '/packages/$id'
+      preLoaderRoute: typeof PackagesIdRouteImport
+      parentRoute: typeof PackagesRoute
+    }
+    '/temples/$id': {
+      id: '/temples/$id'
+      path: '/$id'
+      fullPath: '/temples/$id'
+      preLoaderRoute: typeof TemplesIdRouteImport
+      parentRoute: typeof TemplesRoute
+    }
+    '/travel/bus': {
+      id: '/travel/bus'
+      path: '/bus'
+      fullPath: '/travel/bus'
+      preLoaderRoute: typeof TravelBusRouteImport
+      parentRoute: typeof TravelRoute
+    }
+    '/travel/car': {
+      id: '/travel/car'
+      path: '/car'
+      fullPath: '/travel/car'
+      preLoaderRoute: typeof TravelCarRouteImport
+      parentRoute: typeof TravelRoute
+    }
+    '/travel/train': {
+      id: '/travel/train'
+      path: '/train'
+      fullPath: '/travel/train'
+      preLoaderRoute: typeof TravelTrainRouteImport
+      parentRoute: typeof TravelRoute
+    }
+    '/videos/$id': {
+      id: '/videos/$id'
+      path: '/$id'
+      fullPath: '/videos/$id'
+      preLoaderRoute: typeof VideosIdRouteImport
+      parentRoute: typeof VideosRoute
+    }
+    '/travel/bus/seats': {
+      id: '/travel/bus/seats'
+      path: '/seats'
+      fullPath: '/travel/bus/seats'
+      preLoaderRoute: typeof TravelBusSeatsRouteImport
+      parentRoute: typeof TravelBusRoute
+    }
   }
 }
 
+interface AccommodationRouteChildren {
+  AccommodationIdRoute: typeof AccommodationIdRoute
+}
+
+const AccommodationRouteChildren: AccommodationRouteChildren = {
+  AccommodationIdRoute: AccommodationIdRoute,
+}
+
+const AccommodationRouteWithChildren = AccommodationRoute._addFileChildren(
+  AccommodationRouteChildren,
+)
+
+interface PackagesRouteChildren {
+  PackagesIdRoute: typeof PackagesIdRoute
+}
+
+const PackagesRouteChildren: PackagesRouteChildren = {
+  PackagesIdRoute: PackagesIdRoute,
+}
+
+const PackagesRouteWithChildren = PackagesRoute._addFileChildren(
+  PackagesRouteChildren,
+)
+
+interface TemplesRouteChildren {
+  TemplesIdRoute: typeof TemplesIdRoute
+}
+
+const TemplesRouteChildren: TemplesRouteChildren = {
+  TemplesIdRoute: TemplesIdRoute,
+}
+
+const TemplesRouteWithChildren =
+  TemplesRoute._addFileChildren(TemplesRouteChildren)
+
+interface TravelBusRouteChildren {
+  TravelBusSeatsRoute: typeof TravelBusSeatsRoute
+}
+
+const TravelBusRouteChildren: TravelBusRouteChildren = {
+  TravelBusSeatsRoute: TravelBusSeatsRoute,
+}
+
+const TravelBusRouteWithChildren = TravelBusRoute._addFileChildren(
+  TravelBusRouteChildren,
+)
+
+interface TravelRouteChildren {
+  TravelBusRoute: typeof TravelBusRouteWithChildren
+  TravelCarRoute: typeof TravelCarRoute
+  TravelTrainRoute: typeof TravelTrainRoute
+}
+
+const TravelRouteChildren: TravelRouteChildren = {
+  TravelBusRoute: TravelBusRouteWithChildren,
+  TravelCarRoute: TravelCarRoute,
+  TravelTrainRoute: TravelTrainRoute,
+}
+
+const TravelRouteWithChildren =
+  TravelRoute._addFileChildren(TravelRouteChildren)
+
+interface VideosRouteChildren {
+  VideosIdRoute: typeof VideosIdRoute
+}
+
+const VideosRouteChildren: VideosRouteChildren = {
+  VideosIdRoute: VideosIdRoute,
+}
+
+const VideosRouteWithChildren =
+  VideosRoute._addFileChildren(VideosRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AccommodationRoute: AccommodationRouteWithChildren,
+  BookingsRoute: BookingsRoute,
+  CommunityRoute: CommunityRoute,
+  EmergencyRoute: EmergencyRoute,
+  FamilySafetyRoute: FamilySafetyRoute,
+  FavoritesRoute: FavoritesRoute,
+  FoodRoute: FoodRoute,
+  ForgotPasswordRoute: ForgotPasswordRoute,
+  HomeRoute: HomeRoute,
+  JourneyPlanRoute: JourneyPlanRoute,
+  LiveJourneyRoute: LiveJourneyRoute,
   LoginRoute: LoginRoute,
+  MyJourneyRoute: MyJourneyRoute,
+  NearbyTemplesRoute: NearbyTemplesRoute,
+  NotificationsRoute: NotificationsRoute,
+  OfflineRoute: OfflineRoute,
+  OtpRoute: OtpRoute,
+  PackagesRoute: PackagesRouteWithChildren,
+  PackingRoute: PackingRoute,
+  PambaRoute: PambaRoute,
+  PilgrimageRouteRoute: PilgrimageRouteRoute,
+  ProfileRoute: ProfileRoute,
+  ProfileSetupRoute: ProfileSetupRoute,
+  RegisterRoute: RegisterRoute,
+  RouteMapRoute: RouteMapRoute,
+  SannidhanamRoute: SannidhanamRoute,
+  TemplesRoute: TemplesRouteWithChildren,
+  TravelRoute: TravelRouteWithChildren,
+  VideosRoute: VideosRouteWithChildren,
+  VoiceOnboardingRoute: VoiceOnboardingRoute,
+  VrathamRoute: VrathamRoute,
+  WeatherRoute: WeatherRoute,
+  BookingPassengersRoute: BookingPassengersRoute,
+  BookingPaymentRoute: BookingPaymentRoute,
+  BookingReviewRoute: BookingReviewRoute,
+  BookingSuccessRoute: BookingSuccessRoute,
+  CheckpointIdRoute: CheckpointIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
