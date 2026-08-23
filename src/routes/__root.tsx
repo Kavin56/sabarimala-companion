@@ -77,15 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Ayyappa Yathra" },
+      { name: "description", content: "Sri Sri Shabharish Guruji Ayyappa Yathra" },
+      { name: "author", content: "Ayyappa Yathra" },
+      { property: "og:title", content: "Ayyappa Yathra" },
+      { property: "og:description", content: "Sri Sri Shabharish Guruji Ayyappa Yathra" },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -98,14 +97,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-<<<<<<< Updated upstream
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-=======
-<<<<<<< HEAD
-=======
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
->>>>>>> d11f18b7739c7b072237597f1f621ccec6ecf906
->>>>>>> Stashed changes
     ],
   }),
 
